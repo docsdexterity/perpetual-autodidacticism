@@ -10,19 +10,19 @@ SQL or Structured Query Language is a query programming language for managing RD
 
 2. Creating a database
 
-   ```
+   ```sql
    CREATE DATABASE myDB;
    ```
 
 3. Accessing a database
 
-   ```
+   ```sql
    USE myDB;
    ```
 
 4. Deleting a database
 
-   ```
+   ```sql
    DROP DATABASE myDB;
    ```
 
@@ -32,7 +32,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
      If the database is in read-only mode, we can't make any modifications to it but we can still access the data within.
 
-     ```
+     ```sql
      ALTER DATABASE myDB READ ONLY = 1;
      ```
 
@@ -40,7 +40,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
    - Enabling encryption:
 
-     ```
+     ```sql
 
      ```
 
@@ -50,7 +50,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
 7. Creating a table
 
-   ```
+   ```sql
    CREATE TABLE employees (
       employee_id INT,
        first_name VARCHAR(50),
@@ -69,13 +69,13 @@ SQL or Structured Query Language is a query programming language for managing RD
 
    `SELECT` is also used for querying.
 
-   ```
+   ```sql
    SELECT * FROM employees;
    ```
 
 9. Renaming a table
 
-   ```
+   ```sql
    RENAME TABLE employees to workers;
    ```
 
@@ -83,7 +83,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
 10. Deleting a table
 
-    ```
+    ```sql
     DROP TABLE employees;
     ```
 
@@ -95,7 +95,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       `ADD` to add a new column i.e. `phone_number`.
 
-      ```
+      ```sql
       ALTER TABLE employees
       ADD phone_number VARCHAR(15);
       ```
@@ -103,7 +103,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       `RENAME COLUMN <old-name> TO <new-name>` to rename column.
 
-      ```
+      ```sql
       ALTER TABLE employees
       RENAME COLUMN phone_number TO email;
       ```
@@ -112,7 +112,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       `MODIFY COLUMN <column-name> <data-type>` to modify datatype of a column.
 
-      ```
+      ```sql
       ALTER TABLE employees
       MODIFY COLUMN email VARCHAR(100);
       ```
@@ -121,7 +121,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       `AFTER` to change position of a column.
 
-      ```
+      ```sql
       ALTER TABLE employees
       MODIFY COLUMN email VARCHAR(100)
       AFTER last_name;
@@ -130,7 +130,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       `FIRST` to change position of a column to first.
 
-      ```
+      ```sql
       ALTER TABLE employees
       MODIFY COLUMN email VARCHAR(100)
       FIRST;
@@ -138,7 +138,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     - Deleting a column:
 
-      ```
+      ```sql
       ALTER TABLE employees
       DROP COLUMN email;
       ```
@@ -147,14 +147,14 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     - Syntax:
 
-      ```
+      ```sql
       INSERT INTO <table-name>
       VALUES (value_1, value_2, value_3, ...);
       ```
 
     - Example:
 
-      ```
+      ```sql
       INSERT INTO employees
       VALUES (1, "Eugene", "Krabs", 25.50, "2023-01-02");
       ```
@@ -165,7 +165,7 @@ SQL or Structured Query Language is a query programming language for managing RD
    
     - Syntax: 
 
-      ```
+      ```sql
       INSERT INTO <table-name>
       VALUES (), (), (), ();
       ```
@@ -174,7 +174,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     - Example: 
 
-      ```
+      ```sql
       INSERT INTO employees
       VALUES (2, "Squidward", "Tentacles", 21.99, "2023-03-04"),
              (3, "Spongebob", "Squarepants", 22.67, "2022-05-06"),
@@ -184,7 +184,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
 14. Inserting row with "missing" data
 
-    ```
+    ```sql
     INSERT INTO employees
     VALUES (6, "Sheldon", "Plankton");
     ```
@@ -195,7 +195,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     Example:
 
-    ```
+    ```sql
     INSERT INTO employees (employee_id, first_name, last_name)
     VALUES (6, "Sheldon", "Plankton");
     ```
@@ -206,20 +206,20 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     - Use `*` to select all columns.
 
-      ```
+      ```sql
       SELECT * FROM employees;
       ```
 
     - Use specific column names to select particular columns.
 
-      ```
+      ```sql
       SELECT first_name, last_name 
       FROM employees;
       ```
 
     - Changing order of columns:
 
-      ```
+      ```sql
       SELECT hire_date, first_name, last_name 
       FROM employees;
       ```
@@ -230,7 +230,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       - Syntax:
 
-        ```
+        ```sql
         SELECT *
         FROM <table-name>
         WHERE <condition>;
@@ -238,7 +238,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       - Example 1:
 
-        ```
+        ```sql
         SELECT *
         FROM employees
         WHERE employee_id = 1;
@@ -246,7 +246,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       - Example 2:
 
-        ```
+        ```sql
         SELECT *
         FROM employees
         WHERE first_name = "Spongebob";
@@ -254,7 +254,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       - Example 3:
 
-        ```
+        ```sql
         SELECT *
         FROM employees
         WHERE hourly_pay >= 25;
@@ -262,7 +262,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       - Example 4:
 
-        ```
+        ```sql
         SELECT *
         FROM employees
         WHERE hire_date <= "2023-01-03";
@@ -272,7 +272,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       OPERATOR --> `!=`
 
-      ```
+      ```sql
       SELECT *
       FROM employees
       WHERE employee_id != 1;
@@ -282,7 +282,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       Use `IS NULL` with `WHERE` clause.
 
-      ```
+      ```sql
       SELECT *
       FROM employees
       WHERE hire_date IS NULL;
@@ -296,7 +296,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     - Syntax:
 
-      ```
+      ```sql
       UPDATE <table-name>
       SET <column-name> = value
       WHERE <condition>;
@@ -304,7 +304,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     - Example 1:
 
-      ```
+      ```sql
       UPDATE employees
       SET hourly_pay = 18.76, hire_date = "2024-01-27"
       WHERE employee_id = 6;
@@ -312,7 +312,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     - Example 2: (setting hire_date as `NULL`)
 
-      ```
+      ```sql
       UPDATE employees
       SET hire_date = NULL
       WHERE employee_id = 6;
@@ -324,14 +324,14 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     - Syntax:
 
-      ```
+      ```sql
       DELETE FROM <table-name>
       WHERE <condition>;
       ```
 
     - Example 1:
 
-      ```
+      ```sql
       DELETE FROM employees
       WHERE employee_id = 6;
       ```
@@ -348,7 +348,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     In SQL, `CURRENT_DATE()` and `CURRENT_TIME()` are functions that return the current date and time, respectively, based on the system clock of the server where the database is hosted.
 
-    ```
+    ```sql
     CREATE TABLE test(
       my_date DATE,
       my_time TIME,
@@ -365,13 +365,13 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     For e.g.
 
-    ```
+    ```sql
     SELECT CURRENT_DATE() - 1;
     ```
 
     This would subtract one day from the current date.
 
-    ```
+    ```sql
     SELECT CURRENT_DATE() + 1;
     ```
 
@@ -381,7 +381,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     `UNIQUE` constraint ensures that all the values in a column are different. This constraint can be added while creating the table or after the table has been created.
 
-    ```
+    ```sql
     CREATE TABLE products (
        product_id INT,
        product_name VARCHAR(25) UNIQUE,
@@ -391,7 +391,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     Adding `UNIQUE` constraint after creating the table
 
-    ```
+    ```sql
     ALTER TABLE products
     ADD CONSTRAINT
     UNIQUE(<column-nmae>);
@@ -399,7 +399,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     <i><ins>Note:</ins> Don't forget to replace `<column-name>` with actual column name.</i>
 
-    ```
+    ```sql
     ALTER TABLE products
     ADD CONSTRAINT
     UNIQUE(product_name);
@@ -409,7 +409,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     As, `UNIQUE` doesn't allow duplicate values, trying out something like this:
 
-    ```
+    ```sql
     INSERT INTO products
     VALUES   (100, "hamburger", 3.99),
              (101, "fries", 1.89),
@@ -424,7 +424,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     `NOT NULL` constraint doesn't allows a column value to be NULL.
 
-    ```
+    ```sql
     CREATE TABLE products (
        product_id INT,
        product_name VARCHAR(25) UNIQUE,
@@ -434,14 +434,14 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     Adding the `NOT NULL` constraint after creating the table. (Note: Use `MODIFY`)
 
-    ```
+    ```sql
     ALTER TABLE products
     MODIFY price DECIMAL(4,2) NOT NULL;
     ```
 
     So, inserting any NULL values in the column might give an error - `Error Code: 1048. Column 'price' cannot be null`. For e.g.
 
-    ```
+    ```sql
     INSERT INTO products
     VALUES (104, "cookies", NULL);
     ```
@@ -450,7 +450,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     `CHECK` constraint is a type of constraint that allows you to specify a condition that each row in a table must satisfy for any update or insertion to be accepted.
 
-    ```
+    ```sql
     CREATE TABLE table_name (
        column1 datatype,
        column2 datatype,
@@ -461,7 +461,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     If you have some later plans for the `CHECK` constraint like deleting or modifying it, then add a constraint name to it.
 
-    ```
+    ```sql
     CREATE TABLE table_name (
        column1 datatype,
        column2 datatype,
@@ -472,28 +472,28 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     Adding `CHECK` constraint after the table has been created:
 
-    ```
+    ```sql
     ALTER TABLE table_name
     ADD CONSTRAINT constraint_name CHECK (condition);
     ```
 
     Dropping a `CHECK` constraint:
 
-    ```
+    ```sql
     ALTER TABLE table_name
     DROP CONSTRAINT constraint_name;
     ```
 
     Let's implement an hourly pay check in the following example...
 
-    ```
+    ```sql
     ALTER TABLE employees
     ADD CONSTRAINT chk_hourly_pay CHECK (hourly_pay >= 10.00);
     ```
 
     Inserting a row while `CHECK` constraint has been implemented. For e.g.
 
-    ```
+    ```sql
     INSERT INTO employees
     VALUES (6, "Sheldon", "Planks", 5.00, "2023-01-07");
     ```
@@ -508,7 +508,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     - Creating a table
 
-      ```
+      ```sql
       CREATE TABLE products (
          product_id INT,
          product_name VARCHAR(25),
@@ -518,14 +518,14 @@ SQL or Structured Query Language is a query programming language for managing RD
 
     - Alter a table
 
-      ```
+      ```sql
       ALTER TABLE products
       ALTER price SET DEFAULT 0;
       ```
 
     - Inserting data in tables requires user to mention columns explicitly otherwise this error is returned - `Error Code: 1136. Column count doesn't match value count at row 1`.
 
-      ```
+      ```sql
       INSERT INTO products (product_id, product_name)
       VALUES   (104, "straw"),
                (105, "napkin"),
@@ -589,7 +589,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       - Creating the table
          
-        ```
+        ```sql
         CREATE TABLE transactions(
             transaction_id INT,
             amount DECIMAL(5, 2),
@@ -599,7 +599,7 @@ SQL or Structured Query Language is a query programming language for managing RD
 
       - Inserting data into the table
          
-        ```
+        ```sql
         INSERT INTO transactions (transaction_id, amount)
         VALUES  (1, 4.99),
                 (2, 3.67),
