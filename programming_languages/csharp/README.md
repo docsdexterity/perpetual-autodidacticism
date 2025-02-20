@@ -6,7 +6,7 @@ Reference: [C# Course by Mike Dane](https://www.youtube.com/watch?v=GhQdlIFylQ8)
 
 ### Variables
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +35,7 @@ namespace App1
 
 ### Data Types
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,7 +67,7 @@ namespace App1
 
 ### Working with Strings
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -98,7 +98,7 @@ namespace App1
 
 ### Working with Numbers
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -147,7 +147,7 @@ namespace App1
 
 ### Getting User Input
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -177,7 +177,7 @@ namespace App1
 
 ### Converting String to Int
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -204,7 +204,7 @@ namespace App1
 
 ### Calculator for Addition
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -239,7 +239,7 @@ namespace App1
 
 ### Arrays
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -296,7 +296,7 @@ namespace App1
 
 ### Methods
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -346,7 +346,7 @@ namespace App1
 
 ### Return Statement
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -384,7 +384,7 @@ namespace App1
 
 ### If statements
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -459,7 +459,7 @@ namespace App1
 
 ### Max Method Using If Statement (for 2 inputs only)
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -502,7 +502,7 @@ namespace App1
 
 ### Max Method Using If Statement (for 3 inputs)
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -549,7 +549,7 @@ namespace App1
 
 ### Four Function Calculator
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -601,7 +601,7 @@ namespace App1
 
 ### Switch Statements
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -663,7 +663,7 @@ namespace App1
 
 ### Understanding While Loop
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -707,7 +707,7 @@ namespace App1
 
 ### Do-while loop
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -742,7 +742,7 @@ namespace App1
 
 ### Guessing Game
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -801,7 +801,7 @@ namespace App1
 
 ### For loops
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -839,7 +839,7 @@ namespace App1
 
 ### Exponents Method
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -892,7 +892,7 @@ namespace App1
 
 ### 2D Arrays
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -953,7 +953,7 @@ namespace App1
 
 ### Comments
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -992,7 +992,7 @@ namespace App1
 
 ### Exception Handling
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1093,7 +1093,7 @@ namespace App1
 
 - Book.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1163,7 +1163,7 @@ namespace App1
 
 - Program.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1269,7 +1269,7 @@ namespace App1
 
 - Book.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1309,7 +1309,7 @@ namespace App1
 
 - Program.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1406,7 +1406,7 @@ namespace App1
 
 - Student.cs
   
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1442,7 +1442,7 @@ namespace App1
 
 - Program.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1499,7 +1499,7 @@ namespace App1
 
 - Movie.cs
   
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1555,7 +1555,7 @@ namespace App1
 
 - Program.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1694,7 +1694,7 @@ namespace App1
 
 - Song.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1761,7 +1761,7 @@ namespace App1
 
 - Program.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1813,7 +1813,7 @@ namespace App1
 
 - UsefulTools.cs
   
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1849,7 +1849,7 @@ namespace App1
 
 - Program.cs
   
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1884,7 +1884,7 @@ Contains 3 topics: `Inheritance`, `Extending Functionality`, `Method Overriding`
 
 - Chef.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1916,7 +1916,7 @@ namespace App1
 
 - ItalianChef.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1950,7 +1950,7 @@ namespace App1
 
 - Program.cs
 
-```
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
