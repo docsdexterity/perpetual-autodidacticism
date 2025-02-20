@@ -1,0 +1,28 @@
+ body{
+	font-family: sans-serif;
+	background-color: #fff;
+}
+
+body .line{
+	width: 30%;
+	color: #333;
+}
+
+body #heading{
+	color: #000;
+	text-align: center;
+}
+
+body #paragraph{
+	text-align: center;
+}
+
+div.DOM{
+	text-align: center;
+	color: #dc143c;
+}
+
+ul.UL{
+	display: inline-block;
+	text-align: left;
+}
